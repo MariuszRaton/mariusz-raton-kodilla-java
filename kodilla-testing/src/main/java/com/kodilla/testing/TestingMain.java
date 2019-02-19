@@ -5,22 +5,21 @@ import com.kodilla.testing.calculator.Calculator;
 public class TestingMain {
 
     public static void main(String[] args){
+
         Calculator simpleCalculator = new Calculator();
+        int addResult = simpleCalculator.add(200, 19);
+        int subtractResult = simpleCalculator.subtract(250, 150);
 
-        int resultAdd = simpleCalculator.add(5, 2);
-
-        if (resultAdd > 0 || resultAdd < 0 || resultAdd == 0){
-            System.out.println("test method add OK");
+        if (addResult == 219) {
+            System.out.println("Add test OK");
         } else {
-            System.out.println("Error! method add");
+            System.out.println("Add - test has error!");
         }
 
-        int resultSubtract = simpleCalculator.subtract(5, 2);
-
-        if (resultSubtract > 0 || resultSubtract < 0 || resultSubtract == 0){
-            System.out.println("test method subtract OK");
+        if (subtractResult == 100) {
+            System.out.println("Subtract test OK");
         } else {
-            System.out.println("Error! method subtract");
+            System.out.println("Subtract - test has error!");
         }
     }
 }
