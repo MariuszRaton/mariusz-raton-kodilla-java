@@ -1,10 +1,26 @@
 package com.kodilla.testing;
+//import  com.kodilla.testing.collection.OddNumbersExterminator;
+// import com.kodilla.testing.calculator.Calculator;
 
-import com.kodilla.testing.calculator.Calculator;
+
+import com.kodilla.testing.collection.OddNumbersExterminator;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class TestingMain {
 
     public static void main(String[] args){
+/*
+        OddNumbersExterminator evenNumbers = new  OddNumbersExterminator();
+
+        ArrayList<Integer> evenList = (ArrayList<Integer>) evenNumbers.listOfNumbers();
+
+
+
+        System.out.println(evenList);
+        System.out.println(evenNumbers.exterminate(evenList));
+
 
         Calculator simpleCalculator = new Calculator();
         int addResult = simpleCalculator.add(200, 19);
@@ -21,5 +37,6 @@ public class TestingMain {
         } else {
             System.out.println("Subtract - test has error!");
         }
+  */
     }
 }
