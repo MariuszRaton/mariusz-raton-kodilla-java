@@ -11,17 +11,21 @@ import java.util.List;
 public class TestingMain {
 
     public static void main(String[] args){
-/*
+
         OddNumbersExterminator evenNumbers = new  OddNumbersExterminator();
 
-        ArrayList<Integer> evenList = (ArrayList<Integer>) evenNumbers.listOfNumbers();
+        List<Integer> evenList = evenNumbers.listOfNumbers();
 
 
 
         System.out.println(evenList);
-        System.out.println(evenNumbers.exterminate(evenList));
+        System.out.println(evenNumbers.exterminate((ArrayList<Integer>) evenList));
+
+        List<Integer> evenListEmpty = evenNumbers.emptyList();
+        System.out.println(evenNumbers.exterminate((ArrayList<Integer>) evenListEmpty));
 
 
+/*
         Calculator simpleCalculator = new Calculator();
         int addResult = simpleCalculator.add(200, 19);
         int subtractResult = simpleCalculator.subtract(250, 150);

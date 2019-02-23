@@ -5,10 +5,19 @@ public class OddNumbersExterminator {
 
     public List<Integer> listOfNumbers(){
         List<Integer> numbers = new ArrayList<>();
-        Random generator = new Random();
-        for (int i = 0; i < 20; i++) {
-            numbers.add(generator.nextInt(50) + 1);
-        }
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+        numbers.add(4);
+        numbers.add(5);
+        numbers.add(6);
+        numbers.add(7);
+        numbers.add(8);
+        return numbers;
+    }
+
+    public List<Integer> emptyList(){
+        List<Integer> numbers = new ArrayList<>();
         return numbers;
     }
 
