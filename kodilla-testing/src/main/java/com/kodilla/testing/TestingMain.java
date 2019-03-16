@@ -1,5 +1,5 @@
 package com.kodilla.testing;
-//import  com.kodilla.testing.collection.OddNumbersExterminator;
+import  com.kodilla.testing.collection.OddNumbersExterminator;
 // import com.kodilla.testing.calculator.Calculator;
 
 import com.kodilla.testing.shape.Circle;
@@ -10,6 +10,7 @@ import com.kodilla.testing.shape.ShapeCollector;
 import com.kodilla.testing.shape.Triangle;
 
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -67,7 +68,7 @@ public class TestingMain {
         // Teraz muszę utwożyć listę i dodawać obiekty do ArrayList
 
 
-/*
+
         OddNumbersExterminator evenNumbers = new  OddNumbersExterminator();
 
         List<Integer> evenList = evenNumbers.listOfNumbers();
@@ -79,7 +80,7 @@ public class TestingMain {
 
         List<Integer> evenListEmpty = evenNumbers.emptyList();
         System.out.println(evenNumbers.exterminate((ArrayList<Integer>) evenListEmpty));
-*/
+
 
 /*
         Calculator simpleCalculator = new Calculator();

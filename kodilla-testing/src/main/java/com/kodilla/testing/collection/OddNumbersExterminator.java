@@ -21,7 +21,7 @@ public class OddNumbersExterminator {
         return numbers;
     }
 
-   public List<Integer>  exterminate(ArrayList<Integer> numbers){
+    public List<Integer>  exterminate(List<Integer> numbers){
        List<Integer> even = new ArrayList<>();
        for (Integer e : numbers) {
            if (e % 2 == 0) {

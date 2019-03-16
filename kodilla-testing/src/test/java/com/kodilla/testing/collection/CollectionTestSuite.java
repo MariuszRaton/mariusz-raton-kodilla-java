@@ -26,24 +26,29 @@ public class CollectionTestSuite {
 
     @Test
     public void testOddNumbersExterminatorEmptyList(){
+
         //Given
         OddNumbersExterminator emptyListTest = new  OddNumbersExterminator();
+
         //When
         List<Integer> emptyList = emptyListTest.emptyList();
-        List<Integer> result = emptyListTest.exterminate((ArrayList<Integer>) emptyList);
+        List<Integer> result = emptyListTest.exterminate(emptyList);
 
         List<Integer> expectedList = new ArrayList<>();
 
         //Then
         Assert.assertEquals("The list is empty", expectedList, result);
     }
+
     @Test
     public void testOddNumbersExterminatorNormalList(){
+
         //Given
         OddNumbersExterminator evenNumbers = new  OddNumbersExterminator();
+
         //When
         List<Integer> evenList = evenNumbers.listOfNumbers();
-        List<Integer> result = evenNumbers.exterminate((ArrayList<Integer>) evenList);
+        List<Integer> result = evenNumbers.exterminate(evenList);
 
         List<Integer> expectedList = new ArrayList<>();
         expectedList.add(2);
