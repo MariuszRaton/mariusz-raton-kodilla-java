@@ -25,7 +25,6 @@ public class StatisticsTestSuite {
         testCounter++;
         System.out.println(" ");
         System.out.println("Preparing test # " + testCounter);
-
     }
 
     @After
@@ -38,16 +37,16 @@ public class StatisticsTestSuite {
     public void testCalculateADVStatisticsAllZeros() {
         //Given
         Statistics statisticsmock = mock(Statistics.class);
-        StatisticsCalculate processor = new StatisticsCalculate();
+        StatisticsCalculator processor = new StatisticsCalculator();
 
         //When
         processor.calculateAdvStatistics(statisticsmock);
         processor.showStatistics();
 
         //Then
-        Assert.assertEquals(0, processor.getNumberComments());
-        Assert.assertEquals(0, processor.getNumberPosts());
-        Assert.assertEquals(0, processor.getNumberUsers());
+        Assert.assertEquals(0, processor.getNumberOfComments());
+        Assert.assertEquals(0, processor.getNumberOfPosts());
+        Assert.assertEquals(0, processor.getNumberOfUsers());
         Assert.assertEquals(0, processor.getAverageNumberCommentsOfPost(), 0);
         Assert.assertEquals(0, processor.getAverageNumberCommentsOfUser(), 0);
         Assert.assertEquals(0, processor.getAverageNumberPostsOfUser(), 0);
@@ -57,8 +56,8 @@ public class StatisticsTestSuite {
     public void testCalculateADVStatisticsHundredUsers() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
-        StatisticsCalculate processor = new StatisticsCalculate();
-        ArrayList<String> usernames = new ArrayList<String>();
+        StatisticsCalculator processor = new StatisticsCalculator();
+        List<String> usernames = new ArrayList<String>();
         for (int i = 0; i < 100; i++) {
             usernames.add("testUser");
         }
@@ -70,9 +69,9 @@ public class StatisticsTestSuite {
         processor.showStatistics();
 
         //Then
-        Assert.assertEquals(0, processor.getNumberComments());
-        Assert.assertEquals(0, processor.getNumberPosts());
-        Assert.assertEquals(100, processor.getNumberUsers());
+        Assert.assertEquals(0, processor.getNumberOfComments());
+        Assert.assertEquals(0, processor.getNumberOfPosts());
+        Assert.assertEquals(100, processor.getNumberOfUsers());
         Assert.assertEquals(0, processor.getAverageNumberCommentsOfPost(), 0);
         Assert.assertEquals(0, processor.getAverageNumberCommentsOfUser(), 0);
         Assert.assertEquals(0, processor.getAverageNumberPostsOfUser(), 0);
@@ -82,8 +81,8 @@ public class StatisticsTestSuite {
     public void testCalculateADVStatisticsHundredUsersAndThousandPosts() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
-        StatisticsCalculate processor = new StatisticsCalculate();
-        ArrayList<String> usernames = new ArrayList<String>();
+        StatisticsCalculator processor = new StatisticsCalculator();
+        List<String> usernames = new ArrayList<String>();
         for (int i = 0; i < 100; i++) {
             usernames.add("testUser");
         }
@@ -96,9 +95,9 @@ public class StatisticsTestSuite {
         processor.showStatistics();
 
         //Then
-        Assert.assertEquals(0, processor.getNumberComments());
-        Assert.assertEquals(1000, processor.getNumberPosts());
-        Assert.assertEquals(100, processor.getNumberUsers());
+        Assert.assertEquals(0, processor.getNumberOfComments());
+        Assert.assertEquals(1000, processor.getNumberOfPosts());
+        Assert.assertEquals(100, processor.getNumberOfUsers());
         Assert.assertEquals(0, processor.getAverageNumberCommentsOfPost(), 0);
         Assert.assertEquals(0, processor.getAverageNumberCommentsOfUser(), 0);
         Assert.assertEquals(10, processor.getAverageNumberPostsOfUser(), 0);
@@ -108,8 +107,8 @@ public class StatisticsTestSuite {
     public void testCalculateADVStatisticsLessCommentsThanPosts() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
-        StatisticsCalculate processor = new StatisticsCalculate();
-        ArrayList<String> usernames = new ArrayList<String>();
+        StatisticsCalculator processor = new StatisticsCalculator();
+        List<String> usernames = new ArrayList<String>();
         for (int i = 0; i < 100; i++) {
             usernames.add("testUser");
         }
@@ -123,9 +122,9 @@ public class StatisticsTestSuite {
         processor.showStatistics();
 
         //Then
-        Assert.assertEquals(100, processor.getNumberComments());
-        Assert.assertEquals(1000, processor.getNumberPosts());
-        Assert.assertEquals(100, processor.getNumberUsers());
+        Assert.assertEquals(100, processor.getNumberOfComments());
+        Assert.assertEquals(1000, processor.getNumberOfPosts());
+        Assert.assertEquals(100, processor.getNumberOfUsers());
         Assert.assertEquals(1, processor.getAverageNumberCommentsOfUser(), 0);
         Assert.assertEquals(10, processor.getAverageNumberPostsOfUser(), 0);
     }
@@ -134,8 +133,8 @@ public class StatisticsTestSuite {
     public void testCalculateADVStatisticsLessPostsThanComments() {
         //Given
         Statistics statisticsMock = mock(Statistics.class);
-        StatisticsCalculate processor = new StatisticsCalculate();
-        ArrayList<String> usernames = new ArrayList<String>();
+        StatisticsCalculator processor = new StatisticsCalculator();
+        List<String> usernames = new ArrayList<String>();
         for (int i = 0; i < 100; i++) {
             usernames.add("testUser");
         }
@@ -149,9 +148,9 @@ public class StatisticsTestSuite {
         processor.showStatistics();
 
         //Then
-        Assert.assertEquals(1000, processor.getNumberComments());
-        Assert.assertEquals(100, processor.getNumberPosts());
-        Assert.assertEquals(100, processor.getNumberUsers());
+        Assert.assertEquals(1000, processor.getNumberOfComments());
+        Assert.assertEquals(100, processor.getNumberOfPosts());
+        Assert.assertEquals(100, processor.getNumberOfUsers());
         Assert.assertEquals(10, processor.getAverageNumberCommentsOfUser(), 0);
         Assert.assertEquals(1, processor.getAverageNumberPostsOfUser(), 0);
     }
