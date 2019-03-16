@@ -14,15 +14,15 @@ public class Square implements Shape {
     }
 
     public double getField(){
-        double P = a * a;
-        return P;
+        double p = a * a;
+        return p;
     }
 
     @Override
     public String toString() {
         return "Square{" +
                 "name='" + name + '\'' +
-                ", a=" + a +
+                ", a = " + a +
                 '}';
     }
 }

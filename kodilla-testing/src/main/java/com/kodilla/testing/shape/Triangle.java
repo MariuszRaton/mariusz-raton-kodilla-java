@@ -16,16 +16,16 @@ public class Triangle implements Shape  {
     }
 
     public double getField(){
-        double P = 0.5 * a * h;
-        return P;
+        double p = 0.5 * a * h;
+        return p;
     }
 
     @Override
     public String toString() {
         return "Triangle{" +
                 "name='" + name + '\'' +
-                ", a=" + a +
-                ", h=" + h +
+                ", a = " + a +
+                ", h = " + h +
                 '}';
     }
 }

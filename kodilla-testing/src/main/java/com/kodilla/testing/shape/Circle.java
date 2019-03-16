@@ -14,16 +14,16 @@ public class Circle implements Shape {
     }
 
     public double getField(){
-        double PI = 3.1415;
-        double P = PI * (r * r);
-        return P;
+        double pi = 3.1415;
+        double p = pi * (r * r);
+        return p;
     }
 
     @Override
     public String toString() {
         return "Circle{" +
                 "name='" + name + '\'' +
-                ", r=" + r +
+                ", r = " + r +
                 '}';
     }
 }

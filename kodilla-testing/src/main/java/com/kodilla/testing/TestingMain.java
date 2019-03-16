@@ -67,7 +67,7 @@ public class TestingMain {
 
         // Teraz muszę utwożyć listę i dodawać obiekty do ArrayList
 
-
+/* 6.3
 
         OddNumbersExterminator evenNumbers = new  OddNumbersExterminator();
 
@@ -80,7 +80,7 @@ public class TestingMain {
 
         List<Integer> evenListEmpty = evenNumbers.emptyList();
         System.out.println(evenNumbers.exterminate((ArrayList<Integer>) evenListEmpty));
-
+*/
 
 /*
         Calculator simpleCalculator = new Calculator();

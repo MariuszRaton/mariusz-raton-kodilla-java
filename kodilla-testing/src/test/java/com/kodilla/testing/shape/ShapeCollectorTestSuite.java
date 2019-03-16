@@ -60,9 +60,9 @@ public class ShapeCollectorTestSuite {
     public void testgetField(){
         //Given
         double expectedShape = 113.094;
-        ShapeCollector newShapeCircle = new ShapeCollector();
+        ShapeCollector newShape = new ShapeCollector();
         //When
-        Shape exampleShape = newShapeCircle.addFigure(new Circle("circle one", 6));
+        Shape exampleShape = newShape.addFigure(new Circle("circle one", 6));
         double getExampleShape = exampleShape.getField();
         //Then
         Assert.assertEquals(expectedShape, getExampleShape, 0.01);
