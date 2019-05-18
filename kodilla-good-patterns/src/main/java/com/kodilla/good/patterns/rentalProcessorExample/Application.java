@@ -9,6 +9,8 @@ public class Application {
                 new MailService(), new CarRentalService(), new CarRentalRepository());
          rentalProcessor.process(rentRequest);
 
+         System.out.println(rentRequest);
+
         //RentalProcessor rentalProcessor = new RentalProcessor(
         //        new MailService(), new CarRentalService(), new CarRentalRepository());
        // rentalProcessor.process(rentRequest);

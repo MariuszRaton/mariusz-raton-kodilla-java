@@ -8,4 +8,12 @@ public class User {
         this.name = name;
         this.surname = surname;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
 }

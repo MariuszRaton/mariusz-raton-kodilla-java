@@ -13,6 +13,15 @@ public class RentRequest {
         this.to = to;
     }
 
+    @Override
+    public String toString() {
+        return "RentRequest{" +
+                "user=" + user +
+                ", from=" + from +
+                ", to=" + to +
+                '}';
+    }
+
     public User getUser() {
         return user;
     }
