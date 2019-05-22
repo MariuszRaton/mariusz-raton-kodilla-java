@@ -7,13 +7,13 @@ public class Application {
 
         RentalProcessor rentalProcessor = new RentalProcessor(
                 new MailService(), new CarRentalService(), new CarRentalRepository());
-         rentalProcessor.process(rentRequest);
+        rentalProcessor.process(rentRequest);
 
-         System.out.println(rentRequest);
+        System.out.println(rentRequest);
 
         //RentalProcessor rentalProcessor = new RentalProcessor(
         //        new MailService(), new CarRentalService(), new CarRentalRepository());
-       // rentalProcessor.process(rentRequest);
+        // rentalProcessor.process(rentRequest);
 
     }
 }

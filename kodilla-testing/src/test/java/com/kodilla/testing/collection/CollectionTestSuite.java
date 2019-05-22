@@ -1,34 +1,39 @@
 package com.kodilla.testing.collection;
 
 import com.kodilla.testing.collection.OddNumbersExterminator;
+
 import java.util.ArrayList;
 import java.util.List;
+
 import org.junit.*;
 
 public class CollectionTestSuite {
 
     @Before
-    public void before(){
+    public void before() {
         System.out.println("Test Case: begin");
     }
+
     @After
-    public void after(){
+    public void after() {
         System.out.println("Test Case: end");
     }
+
     @BeforeClass
     public static void beforeClass() {
         System.out.println("Test class OddNumbersExterminator: begin");
     }
+
     @AfterClass
     public static void afterClass() {
         System.out.println("Test class OddNumbersExterminator: end");
     }
 
     @Test
-    public void testOddNumbersExterminatorEmptyList(){
+    public void testOddNumbersExterminatorEmptyList() {
 
         //Given
-        OddNumbersExterminator emptyListTest = new  OddNumbersExterminator();
+        OddNumbersExterminator emptyListTest = new OddNumbersExterminator();
 
         //When
         List<Integer> emptyList = emptyListTest.emptyList();
@@ -41,10 +46,10 @@ public class CollectionTestSuite {
     }
 
     @Test
-    public void testOddNumbersExterminatorNormalList(){
+    public void testOddNumbersExterminatorNormalList() {
 
         //Given
-        OddNumbersExterminator evenNumbers = new  OddNumbersExterminator();
+        OddNumbersExterminator evenNumbers = new OddNumbersExterminator();
 
         //When
         List<Integer> evenList = evenNumbers.listOfNumbers();

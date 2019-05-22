@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.statistics.StatisticsTestSuite" tests="5" skipped="0" failures="0" errors="0"
+           timestamp="2019-05-21T08:03:45" hostname="LAPTOP-QTHORBTU" time="0.378">
+    <properties/>
+    <testcase name="testCalculateADVStatisticsAllZeros"
+              classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.36"/>
+    <testcase name="testCalculateADVStatisticsHundredUsers"
+              classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.007"/>
+    <testcase name="testCalculateADVStatisticsLessPostsThanComments"
+              classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.005"/>
+    <testcase name="testCalculateADVStatisticsHundredUsersAndThousandPosts"
+              classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.002"/>
+    <testcase name="testCalculateADVStatisticsLessCommentsThanPosts"
+              classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.004"/>
+    <system-out><![CDATA[This is the beginning of all tests
+ 
+Preparing test # 1
+Number of users 0
+Number of posts 0
+Number of comments 0
+Avarage number of Posts per one user 0.0
+Avarage number of Comments per one user 0.0
+Avarage number of Comments per one post 0.0
+ 
+Test # 1 completed
+ 
+Preparing test # 2
+Number of users 100
+Number of posts 0
+Number of comments 0
+Avarage number of Posts per one user 0.0
+Avarage number of Comments per one user 0.0
+Avarage number of Comments per one post 0.0
+ 
+Test # 2 completed
+ 
+Preparing test # 3
+Number of users 100
+Number of posts 100
+Number of comments 1000
+Avarage number of Posts per one user 10.0
+Avarage number of Comments per one user 1.0
+Avarage number of Comments per one post 10.0
+ 
+Test # 3 completed
+ 
+Preparing test # 4
+Number of users 100
+Number of posts 1000
+Number of comments 0
+Avarage number of Posts per one user 0.0
+Avarage number of Comments per one user 10.0
+Avarage number of Comments per one post 0.0
+ 
+Test # 4 completed
+ 
+Preparing test # 5
+Number of users 100
+Number of posts 1000
+Number of comments 100
+Avarage number of Posts per one user 0.1
+Avarage number of Comments per one user 10.0
+Avarage number of Comments per one post 1.0
+ 
+Test # 5 completed
+This is the end of tests
+]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+</testsuite>

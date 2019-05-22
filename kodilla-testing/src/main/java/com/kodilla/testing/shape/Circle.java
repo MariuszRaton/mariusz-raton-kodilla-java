@@ -9,11 +9,11 @@ public class Circle implements Shape {
         this.r = r;
     }
 
-    public String getShapeName(){//getShapeName(String name){
-       return name;
+    public String getShapeName() {//getShapeName(String name){
+        return name;
     }
 
-    public double getField(){
+    public double getField() {
         double pi = 3.1415;
         double p = pi * (r * r);
         return p;

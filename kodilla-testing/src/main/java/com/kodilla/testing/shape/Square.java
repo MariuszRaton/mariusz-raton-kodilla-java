@@ -9,11 +9,11 @@ public class Square implements Shape {
         this.a = a;
     }
 
-    public String getShapeName(){
+    public String getShapeName() {
         return name;
     }
 
-    public double getField(){
+    public double getField() {
         double p = a * a;
         return p;
     }

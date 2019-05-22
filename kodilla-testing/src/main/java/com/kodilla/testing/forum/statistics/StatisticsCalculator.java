@@ -32,10 +32,10 @@ public class StatisticsCalculator {
         return averageNumberCommentsOfPost;
     }
 
-    public void calculateAdvStatistics(Statistics statistics){
-         numberOfUsers = statistics.usersNames().size();
-         numberOfPosts = statistics.postsCount();
-         numberOfComments = statistics.commentsCount();
+    public void calculateAdvStatistics(Statistics statistics) {
+        numberOfUsers = statistics.usersNames().size();
+        numberOfPosts = statistics.postsCount();
+        numberOfComments = statistics.commentsCount();
 
         if (numberOfUsers > 0) {
             averageNumberPostsOfUser = (double) numberOfPosts / (double) numberOfUsers;
@@ -46,7 +46,7 @@ public class StatisticsCalculator {
         }
     }
 
-    public void showStatistics(){
+    public void showStatistics() {
         System.out.println("Number of users " + numberOfUsers);
         System.out.println("Number of posts " + numberOfPosts);
         System.out.println("Number of comments " + numberOfComments);

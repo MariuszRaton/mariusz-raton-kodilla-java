@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.library.BookDirectoryTestSuite" tests="6" skipped="0" failures="0" errors="0"
+           timestamp="2019-05-21T08:03:45" hostname="LAPTOP-QTHORBTU" time="0.043">
+    <properties/>
+    <testcase name="testListBooksWithConditionFragmentShorterThan3"
+              classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.029"/>
+    <testcase name="testlistBooksInHandsOfFiveBorrowedBooks"
+              classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.003"/>
+    <testcase name="testListBooksWithConditionMoreThan20" classname="com.kodilla.testing.library.BookDirectoryTestSuite"
+              time="0.003"/>
+    <testcase name="testListBooksWithConditionsReturnList"
+              classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.001"/>
+    <testcase name="testlListBooksInHandsOfNoBorrowedBooks"
+              classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.002"/>
+    <testcase name="testlistBooksInHandsOfOneBorrowedBooks"
+              classname="com.kodilla.testing.library.BookDirectoryTestSuite" time="0.002"/>
+    <system-out><![CDATA[This is the beginning of all tests
+ 
+Preparing test # 1
+ 
+Test # 1 completed
+ 
+Preparing test # 2
+ 
+Test # 2 completed
+ 
+Preparing test # 3
+ 
+Test # 3 completed
+ 
+Preparing test # 4
+ 
+Test # 4 completed
+ 
+Preparing test # 5
+ 
+Test # 5 completed
+ 
+Preparing test # 6
+ 
+Test # 6 completed
+This is the end of tests
+]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+</testsuite>

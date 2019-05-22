@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.collection.CollectionTestSuite" tests="2" skipped="0" failures="0" errors="0"
+           timestamp="2019-05-21T08:03:45" hostname="LAPTOP-QTHORBTU" time="0.005">
+    <properties/>
+    <testcase name="testOddNumbersExterminatorEmptyList" classname="com.kodilla.testing.collection.CollectionTestSuite"
+              time="0.005"/>
+    <testcase name="testOddNumbersExterminatorNormalList" classname="com.kodilla.testing.collection.CollectionTestSuite"
+              time="0.0"/>
+    <system-out><![CDATA[Test class OddNumbersExterminator: begin
+Test Case: begin
+Test Case: end
+Test Case: begin
+Test Case: end
+Test class OddNumbersExterminator: end
+]]></system-out>
+    <system-err><![CDATA[]]></system-err>
+</testsuite>

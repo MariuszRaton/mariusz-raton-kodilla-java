@@ -45,19 +45,19 @@ public class ShapeCollectorTestSuite {
     }
 
     @Test
-    public void testGetFigure(){
+    public void testGetFigure() {
         //Given
         int n = 0;
         ShapeCollector newShape = new ShapeCollector();
         //When
-        Shape expectedShape  = newShape.addFigure(new Circle("circle one", 3));
+        Shape expectedShape = newShape.addFigure(new Circle("circle one", 3));
         Shape exampleShape = newShape.getFigure(0);
         //Then
         Assert.assertEquals(expectedShape, exampleShape);
     }
 
     @Test
-    public void testgetField(){
+    public void testgetField() {
         //Given
         double expectedShape = 113.094;
         ShapeCollector newShape = new ShapeCollector();

@@ -1,5 +1,6 @@
 package com.kodilla.testing;
-import  com.kodilla.testing.collection.OddNumbersExterminator;
+
+import com.kodilla.testing.collection.OddNumbersExterminator;
 // import com.kodilla.testing.calculator.Calculator;
 
 import com.kodilla.testing.shape.Circle;
@@ -16,7 +17,7 @@ import java.util.List;
 
 public class TestingMain {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 /*
         ShapeCollector obiectShapeCollector = new ShapeCollector();
         //obiectShapeCollector;
@@ -56,13 +57,13 @@ public class TestingMain {
 
 
 */
-       // figuraPobranaMetoda.;
+        // figuraPobranaMetoda.;
         //System.out.println("figuraPobranaMetoda" + figuraPobranaMetoda);
 
         //double getExampleShape.get;
 
         //Shape expectedShape  = (Shape) obiectShapeCollector.addFigure(new Circle("circle one", 3));
-       // expectedShape.;
+        // expectedShape.;
         //System.out.println(obiectShapeCollector);
 
         // Teraz muszę utwożyć listę i dodawać obiekty do ArrayList
