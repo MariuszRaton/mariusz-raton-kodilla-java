@@ -1,7 +1,5 @@
 package com.kodilla.patterns.prototype.Library;
 
-import com.kodilla.patterns.Prototype.Library.Book;
-import com.kodilla.patterns.Prototype.Library.Library;
 import org.junit.Assert;
 import org.junit.Test;
 import java.util.stream.IntStream;

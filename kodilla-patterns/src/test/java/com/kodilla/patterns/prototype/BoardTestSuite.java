@@ -1,9 +1,6 @@
 package com.kodilla.patterns.prototype;
 
 
-import com.kodilla.patterns.Prototype.Board;
-import com.kodilla.patterns.Prototype.Task;
-import com.kodilla.patterns.Prototype.TasksList;
 import org.junit.Assert;
 import org.junit.Test;
 import java.util.stream.IntStream;
