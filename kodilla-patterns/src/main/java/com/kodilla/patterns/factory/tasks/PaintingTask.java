@@ -4,9 +4,10 @@ public class PaintingTask implements Task {
     final String taskName;
     final  String color;
     final String whatToPaint;
+    String labelOfExecute;
 
     public PaintingTask(String taskName, String color, String whatToPaint) {
-        this.taskName = taskName;
+        this.taskName = "Painting";
         this.color = color;
         this.whatToPaint = whatToPaint;
     }
@@ -20,15 +21,15 @@ public class PaintingTask implements Task {
     public String executeTask() {
 
         if ((color != null) && (whatToPaint != null)) {
-            return "Task completed";
+            return labelOfExecute = "OK";
         }
-        return "Task is not done";
+        return labelOfExecute;
     }
 
     @Override
     public boolean isTaskExecuted() {
 
-        if (executeTask() == "Task completed") {
+        if (labelOfExecute == "OK") {
             return true;
         } else {
             return false;

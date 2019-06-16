@@ -4,9 +4,10 @@ public class DrivingTask implements Task {
     final String taskName;
     final String where;
     final String using;
+    String labelOfExecute;
 
     public DrivingTask(String taskName, String where, String using) {
-        this.taskName = taskName;
+        this.taskName = "Driving";
         this.where = where;
         this.using = using;
     }
@@ -20,15 +21,15 @@ public class DrivingTask implements Task {
     public String executeTask() {
 
         if ((where != null) && (using != null)) {
-            return "Task completed";
+            return labelOfExecute = "OK";
         }
-        return "Task is not done";
+        return labelOfExecute;
     }
 
     @Override
     public boolean isTaskExecuted() {
 
-        if (executeTask() == "Task completed") {
+        if (labelOfExecute == "OK") {
             return true;
         } else {
             return false;
