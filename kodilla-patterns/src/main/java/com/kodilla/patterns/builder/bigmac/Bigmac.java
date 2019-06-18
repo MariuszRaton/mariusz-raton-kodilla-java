@@ -10,25 +10,35 @@ public final class Bigmac {
     private final List<String> ingredients;
 
     public static class BigmacBuilder {
-        private String bun;
-        private int burgers;
-        private String sauce;
+        private String bun = "Sesame";
+        private int burgers = 1;
+        private String sauce = "Barbecue";
         private List<String> ingredients = new ArrayList<>();
 
-
-
         public BigmacBuilder bun(String bun) {
-            this.bun = bun;
+            if (bun == "") {
+                bun = "Sesame";
+                this.bun = bun;
+            } else {
+                this.bun = bun;
+            }
             return this;
         }
 
         public BigmacBuilder burgers(int burgers) {
-            this.burgers = burgers;
+            if (burgers >= 1) {
+                this.burgers = burgers;
+            }
             return this;
         }
 
         public BigmacBuilder sauce(String sauce) {
-            this.sauce = sauce;
+            if (sauce == "") {
+                sauce = "Barbecue";
+                this.sauce = sauce;
+            } else {
+                this.sauce = sauce;
+            }
             return this;
         }
 
