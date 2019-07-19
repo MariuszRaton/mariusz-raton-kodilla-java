@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.spring70.Portfolio.BoardTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-07-01T19:39:05" hostname="LAPTOP-QTHORBTU" time="0.016">
+  <properties/>
+  <testcase name="testTaskAdd" classname="com.kodilla.spring70.Portfolio.BoardTestSuite" time="0.009"/>
+  <testcase name="testTaskRead" classname="com.kodilla.spring70.Portfolio.BoardTestSuite" time="0.007"/>
+  <system-out><![CDATA[Reading toDoList: [Task 1]
+Reading inProgressList: [Task 1 in progress]
+Reading doneList: [Done Task 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

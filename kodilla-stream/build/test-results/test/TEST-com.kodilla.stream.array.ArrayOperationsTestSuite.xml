@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.stream.array.ArrayOperationsTestSuite" tests="1" skipped="0" failures="0" errors="0"
-           timestamp="2019-05-21T08:03:43" hostname="LAPTOP-QTHORBTU" time="0.017">
-    <properties/>
-    <testcase name="testGetAverage" classname="com.kodilla.stream.array.ArrayOperationsTestSuite" time="0.017"/>
-    <system-out><![CDATA[1
+<testsuite name="com.kodilla.stream.array.ArrayOperationsTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-01T19:39:08" hostname="LAPTOP-QTHORBTU" time="0.034">
+  <properties/>
+  <testcase name="testGetAverage" classname="com.kodilla.stream.array.ArrayOperationsTestSuite" time="0.034"/>
+  <system-out><![CDATA[1
 2
 3
 4
@@ -28,5 +27,5 @@
 5
 121.17391304347827
 ]]></system-out>
-    <system-err><![CDATA[]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
