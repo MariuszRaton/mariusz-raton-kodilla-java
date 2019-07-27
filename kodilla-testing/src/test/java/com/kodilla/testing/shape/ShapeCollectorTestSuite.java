@@ -29,7 +29,7 @@ public class ShapeCollectorTestSuite {
         //Given
         ShapeCollector newShape = new ShapeCollector();
         //When
-        newShape.addFigure(new Circle("circle one", 3));
+        newShape.addFigure(new Circle(3));
         //Then
         Assert.assertEquals(1, newShape.getListOfShapesSize());
     }
@@ -39,7 +39,7 @@ public class ShapeCollectorTestSuite {
         //Given
         ShapeCollector newShape = new ShapeCollector();
         //When
-        boolean result = newShape.removeFigure(new Circle("circle one", 3));
+        boolean result = newShape.removeFigure(new Circle(3));
         //Then
         Assert.assertFalse(result);
     }
@@ -50,7 +50,7 @@ public class ShapeCollectorTestSuite {
         int n = 0;
         ShapeCollector newShape = new ShapeCollector();
         //When
-        Shape expectedShape = newShape.addFigure(new Circle("circle one", 3));
+        Shape expectedShape = newShape.addFigure(new Circle(3));
         Shape exampleShape = newShape.getFigure(0);
         //Then
         Assert.assertEquals(expectedShape, exampleShape);
@@ -62,7 +62,7 @@ public class ShapeCollectorTestSuite {
         double expectedShape = 113.094;
         ShapeCollector newShape = new ShapeCollector();
         //When
-        Shape exampleShape = newShape.addFigure(new Circle("circle one", 6));
+        Shape exampleShape = newShape.addFigure(new Circle(6));
         double getExampleShape = exampleShape.getField();
         //Then
         Assert.assertEquals(expectedShape, getExampleShape, 0.01);

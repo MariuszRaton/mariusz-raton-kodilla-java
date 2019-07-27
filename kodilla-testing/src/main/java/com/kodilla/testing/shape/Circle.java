@@ -1,11 +1,10 @@
 package com.kodilla.testing.shape;
 
 public class Circle implements Shape {
-    private String name;
+    private String name = "Circle";
     private double r;
 
-    public Circle(String name, double r) {
-        this.name = name;
+   public Circle( double r) {
         this.r = r;
     }
 
