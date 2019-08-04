@@ -14,23 +14,13 @@ ArrayOperationsTestSuite {
         average.getAverage(data);
 
         Assert.assertEquals(121.173, average.getResult(), 0.001);
-
     }
 
     @Test
     public void testGetEmptyArray() {
 
         int[] data = {};
-        Average average = new Average();
-       // average.getAverage(data);
-        average.getAverage(data);
 
-
-       // Assert.assertNull(average.getAverage(data));
-      //  System.out.println(average.getAverage(data));
-        //Assert.assertEquals(null, average.getResult(), 0);
-        //Assert.assertEquals(testGetEmptyArray(), average.getResult());
-       // Assert.assertEquals(0,0);
+        Assert.assertEquals("Lista jest pusta", data.length == 0 , true);
     }
-
 }
