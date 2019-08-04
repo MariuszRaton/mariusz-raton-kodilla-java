@@ -1,6 +1,5 @@
 package com.kodilla.stream;
 
-import com.kodilla.stream.beautifier.PoemBeautifier;
 import com.kodilla.stream.forumuser.Forum;
 import com.kodilla.stream.forumuser.ForumUser;
 
@@ -11,7 +10,7 @@ import java.util.stream.Collectors;
 public class StreamMain {
 
     public static void main(String[] args) {
-
+/*
         PoemBeautifier poemExample = new PoemBeautifier();
         String text1 = poemExample.beautify("cos", t -> t.toUpperCase());
         System.out.println(text1);
@@ -24,8 +23,8 @@ public class StreamMain {
 
         String text4 = poemExample.beautify("LoRen IpsUm", t -> t.toLowerCase());
         System.out.println(text4);
-
-   /* 7.3
+*/
+   /* 7.3*/
         Forum forumUsers = new Forum();
         LocalDate now = LocalDate.now();
         Map<Integer, ForumUser> map = forumUsers.getList().stream()
@@ -39,7 +38,7 @@ public class StreamMain {
                 .map(entry -> entry.getKey() + ": " + entry.getValue())
                 .forEach(System.out::println);
 
-*/
+
  /* 7.2
         ExpressionExecutor expressionExecutor = new ExpressionExecutor();
 
