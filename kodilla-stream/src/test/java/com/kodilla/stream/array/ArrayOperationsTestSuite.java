@@ -21,6 +21,9 @@ ArrayOperationsTestSuite {
 
         int[] data = {};
 
-        Assert.assertEquals("Lista jest pusta", data.length == 0 , true);
+        Average average = new Average();
+        average.getAverage(data);
+
+        Assert.assertEquals(-1.0, average.getResult(), 0.001);
     }
 }
