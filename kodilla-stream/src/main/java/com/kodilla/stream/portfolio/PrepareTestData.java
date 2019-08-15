@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class PrepareTestData {
 
-    public Board getPrepareTestData(){
+    public  Board getPrepareTestData(){
 
         User user1 = new User("developer1", "John Smith");
         User user2 = new User("projectmanager1", "Nina White");

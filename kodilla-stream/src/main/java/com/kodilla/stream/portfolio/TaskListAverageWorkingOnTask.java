@@ -3,16 +3,15 @@ package com.kodilla.stream.portfolio;
 
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TaskListAverageWorkingOnTask {
 
-public void getTaskListAverageWorkingOnTask(PrepareTestData project, List<TaskList> inProgress){
+public double getTaskListAverageWorkingOnTask(){
+    PrepareTestData project = new PrepareTestData();
 
-  //  PrepareTestData project = prepareTestData;
-   // PrepareTestData project = new PrepareTestData();
-
-   // List<TaskList> inProgress = new ArrayList<>();
+    List<TaskList> inProgress = new ArrayList<>();
     inProgress.add(new TaskList("In progress"));
 
     int durationOfTaskInStatus = project.getPrepareTestData().getTaskLists().stream()
@@ -28,7 +27,7 @@ public void getTaskListAverageWorkingOnTask(PrepareTestData project, List<TaskLi
             .reduce(0, (sum, current) -> sum += current);
 
     double avg = durationOfTaskInStatus / tasksQty;
+    return avg;
 
-}
-
+    }
 }
