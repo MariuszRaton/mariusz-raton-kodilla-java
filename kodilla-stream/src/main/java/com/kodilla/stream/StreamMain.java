@@ -32,10 +32,10 @@ public class StreamMain {
         userList.add(new ForumUser(1, "Jan", 'M', 1990, 1, 2, 3));
         userList.add(new ForumUser(2, "Anna", 'F', 2001, 11, 22, 2));
         userList.add(new ForumUser(3, "Edward", 'M', 1985, 10, 12, 0));
-        userList.add(new ForumUser(4, "Adam", 'M', 2016, 11, 01, 5));
-        userList.add(new ForumUser(5, "Konrad", 'M', 1985, 04, 24, 2));
+        userList.add(new ForumUser(4, "Adam", 'M', 2016, 11, 1, 5));
+        userList.add(new ForumUser(5, "Konrad", 'M', 1985, 4, 24, 2));
 
-        Forum forumUsers = new Forum();
+        Forum forumUsers = new Forum(userList);
         LocalDate now = LocalDate.now();
 
         Map<Integer, ForumUser> map = forumUsers.getList(userList).stream()
