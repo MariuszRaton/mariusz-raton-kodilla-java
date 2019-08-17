@@ -1,4 +1,4 @@
-package com.kodilla.good.patterns.SaleService;
+package com.kodilla.good.patterns.saleService;
 
 public class SaleProcessor {
     private InformationService informationService;

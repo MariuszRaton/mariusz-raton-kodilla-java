@@ -38,7 +38,7 @@ public class StreamMain {
         Forum forumUsers = new Forum(userList);
         LocalDate now = LocalDate.now();
 
-        Map<Integer, ForumUser> map = forumUsers.getList(userList).stream()
+        Map<Integer, ForumUser> map = forumUsers.getList().stream()
                 .filter(user -> user.getGender() == 'M' )
                 .filter(user -> user.getDateOfBirth().isBefore(now.minusYears(20)))
                 .filter(user -> user.getPostsOfPublished() > 1)
