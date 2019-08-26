@@ -3,10 +3,12 @@ package com.kodilla.good.patterns.ShopFood2Door;
 public class Product {
     private  String productName;
     private  Provider provider;
+    private Integer productQuantity;
 
-    public Product(String productName, Provider provider) {
+    public Product(String productName, Provider provider, Integer productQuantity) {
         this.productName = productName;
         this.provider = provider;
+        this.productQuantity = productQuantity;
     }
 
     public Provider getProvider() {
@@ -17,8 +19,8 @@ public class Product {
         return productName;
     }
 
-    public void setProductName(String productName) {
-        this.productName = productName;
+    public Integer getProductQuantity() {
+        return productQuantity;
     }
 
     @Override
