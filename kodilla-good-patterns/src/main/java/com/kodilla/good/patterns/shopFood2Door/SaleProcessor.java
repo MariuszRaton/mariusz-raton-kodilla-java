@@ -1,4 +1,4 @@
-package com.kodilla.good.patterns.ShopFood2Door;
+package com.kodilla.good.patterns.shopFood2Door;
 
 import java.util.Map;
 

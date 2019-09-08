@@ -1,4 +1,4 @@
-package com.kodilla.good.patterns.Airline;
+package com.kodilla.good.patterns.airline;
 
 import java.util.Arrays;
 import java.util.HashMap;
